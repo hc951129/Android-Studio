@@ -2,6 +2,7 @@
 
     格式化代码：ctrl+alt+L
     重写方法：ctrl+O
+    在整个项目中搜寻(Find in Path)：ctrl+shift+F
 
 ### android:layout_gravity和android:gravity
     android:gravity是对元素本身说的，指的是文字在控件中的对齐方式。或者字view在父view中的对其方式(在父view中设置)。
