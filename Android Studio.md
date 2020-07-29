@@ -14,3 +14,7 @@
 ### File类中的list和listFiles方法
     list()方法是返回某个目录下的所有文件和目录的文件名，返回的是String数组
     listFiles()方法返回的是某个目录下所有文件和目录的绝对路径，返回的是File数组
+
+### TextView添加滚动条
+    在xml文件中的TextView中添加：android:scrollbars="vertical"(垂直滚动)
+    在java文件中添加：textView.setMovementMethod(ScrollingMovementMethod.getInstance());
