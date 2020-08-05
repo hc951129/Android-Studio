@@ -28,11 +28,18 @@
 #### FileOutputStream
     该类用来创建一个文件并向文件中写数据。如果该流在打开文件进行输出前，目标文件不存在，那么该流会创建该文件。
 #### openFileOutput()
-    openFileOutput()方法可以用于把数据输出到文件中。
+    openFileOutput()方法可以用于把数据输出到文件中。openFileOutput()返回的是一个FileOutputStream对象，得到了对象之后
+    就可以使用Java流的方式将数据写入到文件中了。
     openFileOutput()第一参数用于指定文件名称，不能包含路径分隔符"/"，如果文件不存在，Android会自动创建它。创建的文件保存
     在/data/data/<package name>/files目录；
     openFileOutput()第二参数是文件的操作模式：MODE_PRIVATE覆盖内容，MODE_APPEND追加内容
 #### 例：
     FileOutputStream out = null;
     out = OpenFileOutput("data",Context.MODE_PRIVATE);
+    
+### BufferedWriter字符缓冲输出流
+    BufferedWriter writer = null;
+    writer = new BufferedWriter(new OutputStreamWriter(out));
+    OutputStreamWriter类是Writer类的子类，是从字符流到字节流的桥梁。
+    
         
